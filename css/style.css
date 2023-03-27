@@ -25,7 +25,7 @@ h6,
   position: absolute;
   top: 0;
   left: 0;
-  z-index: 5;
+  z-index: 999;
   width: 100%;
   background-color: rgba(78, 76, 76, 0.252);
 }
@@ -75,6 +75,9 @@ a:hover {
 
 .nav-link:hover {
   color: red;
+}
+.navbar-brand img{
+  height: 50px;
 }
 
 .modal {
@@ -481,7 +484,17 @@ a:hover {
   border-radius: 3px;
   color: black;
 }
-
+.facilities li {
+  list-style: none;
+  float: left;
+  margin: 0 3px 3px 0;
+  font-weight: 400;
+  font-size: 14px;
+  padding: 5px 6px;
+  border: solid 1px #e2e0e0;
+  border-radius: 3px;
+  color: black;
+}
 
 .fh5co-card-item:hover,
 .fh5co-card-item:focus {
@@ -537,6 +550,254 @@ a:hover {
   left: 100px;
   height: 10px
 }
+.img-responsive{
+  width: 350px;
+}
+.img-responsive-lastest {
+  width: 310px;
+  height: 200px;
+}
+
+.portfolio-item .hover-bg {
+  overflow: hidden;
+  position: relative;
+  margin: auto;
+}
+
+.hover-bg .hover-text {
+  position: absolute;
+  text-align: center;
+  color: #fff;
+  background: rgba(31, 56, 110, 0.8);
+  height: 300px;
+  width: 310px;
+  opacity: 0;
+  transition: all 0.5s;
+   
+   
+}
+
+.hover-bg .hover-text>h4 {
+  opacity: 0;
+  color: #fff;
+  -webkit-transform: translateY(100%);
+  transform: translateY(100%);
+  transition: all 0.3s;
+  font-size: 15px;
+  letter-spacing: 1px;
+  font-weight: 400;
+  text-transform: uppercase;
+  position: absolute;
+  top: 100px;
+  left: 10px;
+}
+
+.hover-bg .hover-text>h5 {
+  opacity: 0;
+  color: #fff;
+  -webkit-transform: translateY(100%);
+  transform: translateY(100%);
+  transition: all 0.3s;
+  font-size: 17px;
+  letter-spacing: 1px;
+  font-weight: 900;
+  text-transform: uppercase;
+  position: absolute;
+  top: 120px;
+  left: 10px;
+}
+
+.hover-bg:hover .hover-text>h4,
+.hover-bg:hover .hover-text>h5 {
+  opacity: 1;
+  -webkit-backface-visibility: hidden;
+  -webkit-transform: translateY(0);
+  transform: translateY(0);
+}
+
+.hover-bg:hover .hover-text {
+  opacity: 1;
+}
+
+.executive .owl-carousel .owl-item img{
+  width: 250px;
+  height: 255px;
+  margin: auto;
+}
+.team-1 .social-list {
+  position: absolute;
+  bottom: 105px;
+  text-align: center;
+  z-index: 20;
+  border-radius: 5px 5px 0 0;
+  color: rgb(255, 255, 255);
+  display: inline-block;
+  width: 100%;
+  margin-left:-20px ;
+}
+
+.team-1 .social-list a {
+  color: #fff;
+  width: 40px;
+  height: 40px;
+  display: inline-block;
+  margin: 2px;
+  border-radius: 3px;
+  text-align: center;
+  background: rgba(0,0,0,0.5);
+}
+
+.team-1 .details {
+  text-align: center;
+}
+
+
+.team-1 .details h4 a{
+  font-size: 20px;
+  font-weight: 400;
+  color: #212121;
+}
+
+.team-1 .details h4 a:hover{
+  color: #212529;
+}
+
+.team-1 .details h5 {
+  font-size: 15px;
+  color: #535353;
+  font-weight: 400;
+}
+
+.team-1 .social-list a:hover{
+  box-shadow: none;
+}
+
+.team-1 .facebook-bg:hover {
+  background: #4867aa!important;
+}
+
+.team-1 .twitter-bg:hover {
+  background: #56d7fe!important;
+}
+
+.team-1 .google-bg:hover {
+  background: #dc4e41!important;
+}
+
+.our-team-2{
+  background: rgba(0, 0, 0, 0.04) url(../img/bg-img-6.jpg) top left repeat;
+  background-size: cover;
+}
+.executive .owl-nav  .owl-next span,
+.executive .owl-nav  .owl-prev span{
+  display: none;
+}
+.bg-dan{
+  background-color: red;
+  /* height: 50px; */
+}
+.text-dan h4{
+  line-height: 50px;
+}
+.yo{
+  width: 200px;
+}
+.bg-d{
+  background-color: #010f2d;
+}
+.social-list{
+  justify-content: space-between;
+  padding-left: 20px;
+  padding-right: 30px;
+}
+ 
+.social-list .facebook-bg:hover {
+  background: #4867aa!important;
+}
+
+.social-list .twitter-bg:hover {
+  background: #56d7fe!important;
+}
+
+.social-list .google-bg:hover {
+  background: #dc4e41!important;
+}
+.all-title-box {
+  background: url(../img/car-1.jpg );
+  position: relative;
+  padding: 250px 0 120px 0px;
+  margin-bottom: 0px;
+  background-size: cover;
+}
+
+.all-title-box::before {
+  content: "";
+  position: absolute;
+  background: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  left: 0px;
+}
+
+.all-title-box .container {
+  position: relative;
+}
+
+.all-title-box h2 {
+  color: #ffffff;
+  padding: 0px;
+  font-size: 40px;
+  font-weight: 600;
+}
+
+#breadcrumbs {
+  background: red;
+  padding: 10px 20px;
+  position: absolute;
+  right: 0px;
+  display: inline-block;
+  font-size: 15px;
+  font-weight: 500;
+  color: #888;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+#breadcrumbs:hover {
+  background: grey;
+}
+
+#breadcrumbs ul {
+  margin: 0;
+  padding: 0;
+}
+
+#breadcrumbs ul li {
+  display: inline-block;
+  list-style: none;
+  margin: 0 0 0 10px;
+  color: #ffffff;
+}
+
+#breadcrumbs:hover ul li a {
+  color: red;
+}
+
+#breadcrumbs ul li:first-child::before {
+  display: none;
+}
+
+#breadcrumbs ul li::before {
+  content: "\f105";
+  font-family: "FontAwesome";
+  color: #ffffff;
+  font-size: 14px;
+  margin-right: 15px;
+}
 
 
 @media (max-width: 993px) {
@@ -548,9 +809,10 @@ a:hover {
     position: fixed;
     top: 0;
     left: 0;
-    z-index: 5;
+    z-index: 9999;
     width: 100%;
-    background: rgba(12, 12, 12, 0.1);
+    background: rgba(12, 12, 12, 0.566);
+    backdrop-filter: blur(20px);
   }
 
   .navbar-collapse {
@@ -588,9 +850,9 @@ a:hover {
 /* --------------------------------------------------------------- */
 @media(max-width: 414px) {
   .navbar-brand img {
-    height: 40px;
-    position: absolute;
-    left: -9px;
+    height: 35px;
+    position: relative;
+    left: -50px;
     bottom: 5px;
 
   }
@@ -602,6 +864,16 @@ a:hover {
   h5 {
     font-size: 15px;
   }
+   .carousel-caption {
+    top: 42%;
+    left: 8px;
+  }
+
+  .display-4 {
+    font-size: 15px;
+    line-height: 1.2;
+  }
+
 
   .btn-lg {
     font-size: 15px
@@ -629,8 +901,43 @@ a:hover {
     border-radius: 0 60px 60px 0;
     height: 31px;
   }
-
+  
   .readmorebtn {
     left: 90px;
   }
+  .yo{
+    margin: auto;
+  }
+  .text-dan h4{
+    line-height: 5px;
+    text-align: center;
+    
+  }
+}
+@media (max-width:320px){
+  .navbar-brand img {
+    height: 22px;
+    position: relative;
+    left: -30px;
+
+  }
+
+  .readmorebtn {
+    left: 70px;
+  }
+  .featured-items .owl-nav .owl-prev {
+    position: absolute;
+    left: 60px;
+    top: 300px;
+    outline: none;
+
+  }
+
+  .featured-items .owl-nav .owl-next {
+    position: absolute;
+    right: 80px;
+    top: 300px;
+    outline: none;
+  }
+
 }
