@@ -20,7 +20,12 @@ h6,
 
   font-weight: 400;
 }
-
+ ul li {
+  list-style: none;
+ }
+.mb-50{
+  margin-bottom: 50px;
+}
 .header1 {
   position: absolute;
   top: 0;
@@ -91,6 +96,9 @@ a:hover {
   border: none;
   outline: none;
 }
+.close{
+  outline: none;
+}
 .signin {
   list-style: none;
   font-size: 13px;
@@ -142,7 +150,7 @@ a:hover {
   align-items: center;
 }
 
-.carousel-item {
+.carousel-item2 {
   height: 100vh;
 }
 
@@ -763,11 +771,14 @@ a:hover {
   background: #dc4e41!important;
 }
 .all-title-box {
-  background: url(../img/car-1.jpg );
-  position: relative;
-  padding: 250px 0 150px 0px;
-  margin-bottom: 0px;
+  background: url(../img/car-1.jpg)top left repeat;
+  padding: 250px 0 50px 0px;
   background-size: cover;
+  height: 360px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  position: relative;
+  text-align: center;
 }
 
 /* car.html */
@@ -808,9 +819,10 @@ a:hover {
 
 .all-title-box h2 {
   color: #ffffff;
-  padding: 0px;
   font-size: 40px;
   font-weight: 600;
+  position: absolute;
+  bottom: -25px;
 }
 
 #breadcrumbs {
@@ -1260,6 +1272,7 @@ a:hover {
   font-weight: 600;
   width: 120px;
   margin: 2px 0 3px 0;
+
   line-height: 35px;
   border-radius: 3px;
   display: inline-block;
@@ -1469,12 +1482,244 @@ a:hover {
 .contact-section .google-i {
   background: #c3291c;
 }
+/* .car-details-page */
+.car-details-page .heading {
+  margin: 0 0 25px;
+  font-size: 20px;
+  font-weight: 600;
+}
 
+ 
+.heading-car{
+  margin-bottom: 20px;
+}
+.car-details-sliders .carousel-indicators {
+  margin-left: initial;
+  margin-top: 0;
+}
+
+.car-details-sliders .carousel-indicators a {
+  cursor: pointer;
+}
+
+.car-details-sliders .carousel-indicators > li {
+  height: initial;
+  text-indent: initial;
+  margin-right: 0;
+  margin-left: 0;
+}
+
+.dd.car-details-sliders .carousel-indicators > li {
+  width: initial;
+  height: initial;
+  text-indent: initial;
+}
+
+.car-details-sliders .list-inline {
+  width: 100%;
+  bottom: 10px;
+  position: absolute;
+}
+
+.car-details-sliders .list-inline a{
+  margin-right: 0;
+}
+
+.car-properties .list-inline-item {
+  width: 80px;
+  margin: 5px!important;
+  border-radius: 5%;
+}
+
+.car-properties .list-inline-item a img {
+  width: 100%;
+  border: none;
+  border-radius: 5%;
+  box-shadow: 0 1px 20px 0 rgba(0, 0, 0, 0.82);
+}
+
+.car-details-sliders .carousel-indicators > li.active img {
+  opacity: 0.7;
+}
+
+.car-details-sliders .right {
+  position: absolute;
+  right: 15px;
+  top: 45%;
+}
+
+.car-details-sliders .left {
+  left: 10px;
+  top: 47%;
+  width: 30px;
+  height: 30px;
+  line-height: 33px;
+  position: absolute;
+  z-index: 5;
+  display: inline-block;
+  right: -30px;
+  text-align: center;
+  background: #a5a5a5;
+  border-radius: 5%;
+}
+
+.car-details-sliders .left i {
+  font-size: 20px;
+  color: #4d4d4d;
+}
+
+.car-details-sliders .right {
+  right: 10px;
+  top: 47%;
+  width: 30px;
+  height: 30px;
+  line-height: 33px;
+  position: absolute;
+  z-index: 5;
+  display: inline-block;
+  text-align: center;
+  background: #a5a5a5;
+  border-radius: 5%;
+}
+
+.car-details-sliders .right i {
+  font-size: 20px;
+  color: #4d4d4d;
+}
+
+.list-inline-item:not(:last-child) {
+  margin-right: 1px;
+}
+
+.car-properties {
+  width: 100%;
+}
+
+/** Carousel indicators section start **/
+.carousel-indicators-section{
+  background: darkslateblue;
+  display: inline-block;
+  width: 100%;
+}
+
+.carousel-indicators-section .car-properties .list-inline-item {
+  width: 20%;
+  margin: 0!important;
+  border-radius: 0!important;
+}
+
+.carousel-indicators-section .list-inline-item a img {
+  border-radius: 0;
+}
+
+.carousel-item img{
+  width: 100%;
+}
+
+.carousel-indicators-section .carousel-indicators > li {
+  height: initial;
+  text-indent: initial;
+  margin-right: 0;
+  margin-left: 0;
+}
+
+.carousel-indicators-section .list-inline {
+  width: 100%;
+  bottom: inherit;
+  position: absolute;
+}
+
+.carousel-indicators-section .carousel-indicators {
+  margin-left: initial;
+  margin-top: 0;
+  position: relative;
+}
+.tabbing-box .tab-pane {
+  padding-top: 30px;
+}
+
+.tabbing-box .nav-tabs {
+  border-bottom: none;
+  background: #fff;
+  box-shadow: 0 0 35px rgba(0, 0, 0, 0.1);
+  color: #000;
+}
+
+.tabbing-box .nav-tabs .nav-link {
+  display: block;
+  padding: 12px 17px 10px;
+}
+
+.tabbing-box .nav-tabs li {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.tabbing-box .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+  color: #fff;
+  border-radius: 0;
+  background: red;
+}
+
+.tabbing-box .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link:hover {
+  border-radius: 0;
+  color: #fff;
+}
+
+.tabbing-box .nav-tabs .nav-link {
+  border: none;
+}
+.nav-tabs .nav-link {
+  color: #000;
+}
+.widget {
+  padding: 30px 20px;
+  border-bottom: solid 1px #efefef;
+}
+.advanced-search ul span {
+  font-weight: 500;
+  float: left;
+  color: #474646;
+}
+.advanced-search ul li {
+  list-style: none;
+  padding: 5px 0;
+  color: #787878;
+  font-size: 15px;
+  line-height: 30px!important;
+  border-bottom: 1px dotted #DDD;
+  text-align: right;
+  font-weight: 500;
+}
+.question .contact-info li {
+  line-height: 25px;
+  padding-left: 22px;
+  font-weight: 500;
+  position: relative;
+  font-size: 15px;
+  margin-bottom: 15px;
+}
+.question .social-list li a {
+  width: 38px;
+  height: 38px;
+  line-height: 38px;
+  text-align: center;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 3px;
+  color: #fff;
+  margin: 0 4px 2px 0;
+}
 .contact-section .facebook-i {
   background: #3b589e;
 }
 
-
+@media (max-width: 1024px) {
+  .executive .owl-carousel .owl-item img{
+    width: 230px;
+    height: 240px;
+  }
+}
 
 @media (max-width: 993px) {
   .head1 {
@@ -1504,7 +1749,7 @@ a:hover {
     display: none;
   }
 
-  .carousel-item {
+  .carousel-item2 {
     width: 150vh;
     height: 80vh;
   }
@@ -1533,7 +1778,7 @@ a:hover {
 
   }
 
-  .carousel-item {
+  .carousel-item2 {
     height: 70vh;
   }
 
@@ -1589,12 +1834,14 @@ a:hover {
     text-align: center;
     
   }
-  .all-title-box {
-    text-align: center;
-    padding: 150px 0 150px 0px;
-    margin-bottom: 0px;
-    background-size: cover;
-  }
+  .all-title-box h2 {
+    color: #ffffff;
+    font-size: 40px;
+    font-weight: 600;
+    position: absolute;
+    bottom: 25px;
+    left: 100px;
+}
 
   #breadcrumbs {
     position: relative;
@@ -1602,6 +1849,9 @@ a:hover {
     -moz-transform: translateY(0%);
     -ms-transform: translateY(0%);
     transform: translateY(0%);
+  }
+  .pull-right {
+    float: left !important;
   }
 }
 @media (max-width:400px){
@@ -1629,11 +1879,12 @@ a:hover {
     top: 300px;
     outline: none;
   }
-  .all-title-box {
+   .all-title-box h2{
+   left: 50px;
+  } 
+  .text-dan h4 ,.text-dan h6{
+    line-height: 15px;
     text-align: center;
-    padding: 200px 0 100px 0px;
-    margin-bottom: 0px;
-    background-size: cover;
+    
   }
-
 }
