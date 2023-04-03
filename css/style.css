@@ -139,6 +139,9 @@ a:hover {
   border: none;
 
 }
+.s-show{
+  display: none;
+}
 
 .forminput {
   font-size: 30px;
@@ -1713,6 +1716,68 @@ a:hover {
 .contact-section .facebook-i {
   background: #3b589e;
 }
+/* search.html */
+.search-box-3{
+  padding: 30px 0 10px;
+  background: #fff;
+  background: red;
+  box-shadow: 0 0 35px rgba(0, 0, 0, 0.1);
+}
+
+.search-box-3 .button-theme{
+  color: #fff;
+  font-weight: 600;
+}
+
+.search-box-3 i{
+  margin-right: 3px;
+}
+
+.search-box-3 .form-group {
+  margin-bottom: 20px;
+}
+ 
+.search-box-3 .range-slider {
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+.search-box-3 .range-slider .ui-slider .ui-slider-range {
+  position: absolute;
+  z-index: 1;
+  display: block;
+  border: 0;
+  background-position: 0 0;
+  background-color: #fff;
+}
+ .search-box-3 .range-slider .ui-slider .ui-slider-handle {
+  position: absolute;
+  z-index: 2;
+  width: 5px;
+  height: 5px;
+  border-radius: 0;
+
+  background-color: #fff;
+  cursor: w-resize;
+  outline: none;
+  top: -5px;
+  margin-left: -8px;
+  box-shadow: none !important;
+}
+
+.search-box-3.range-slider .ui-slider .ui-slider-range {
+  position: absolute;
+  z-index: 1;
+  display: block;
+  border: 0;
+  background-position: 0 0;
+  background-color: #fff;
+}
+.search-box-3.range-slider label {
+  font-size: 14px;
+  color: #fff;
+  font-weight: 500;
+  margin-bottom: 12px;
+}
 
 @media (max-width: 1024px) {
   .executive .owl-carousel .owl-item img{
@@ -1777,21 +1842,30 @@ a:hover {
     bottom: 5px;
 
   }
-
+  .s-show{
+    display: block;
+  }
+  .all-title-box {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
   .carousel-item2 {
     height: 70vh;
   }
 
   h5 {
-    font-size: 15px;
+    font-size: 13px;
   }
    .carousel-caption {
     top: 42%;
     left: 8px;
   }
+  
 
   .display-4 {
-    font-size: 15px;
+    font-size: 19px;
     line-height: 1.2;
   }
 
@@ -1842,7 +1916,14 @@ a:hover {
     bottom: 25px;
     left: 100px;
 }
-
+.all-title-box h2.hh{
+  color: #ffffff;
+  font-size: 40px;
+  font-weight: 600;
+  position: absolute;
+  bottom: 25px;
+  left: 0;
+}
   #breadcrumbs {
     position: relative;
     -webkit-transform: translateY(0%);
@@ -1880,7 +1961,8 @@ a:hover {
     outline: none;
   }
    .all-title-box h2{
-   left: 50px;
+   padding: 10px;
+   left: 0;
   } 
   .text-dan h4 ,.text-dan h6{
     line-height: 15px;
